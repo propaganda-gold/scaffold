@@ -1,0 +1,13 @@
+underlying_bin=/usr/bin/x86_64-linux-gnu-gcc-7
+buffer="${underlying_bin} "
+for var in "$@"
+do
+		if [ "$var" = "-std=c++0x" ]; then
+			buffer="${buffer} -std=c++11"
+		else
+			buffer="${buffer} $var"
+		fi
+done
+
+echo "${buffer}"
+"${buffer}"

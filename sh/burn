@@ -1,0 +1,8 @@
+COMMAND="$1"
+BAZEL="bazel"
+BAZEL="bazel-colorized"
+if [ $COMMAND == "test" ]; then
+	${BAZEL} "$1" --test_output=all "${@:2}"
+else
+	${BAZEL} "$1" "${@:2}"
+fi

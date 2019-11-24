@@ -1,0 +1,7 @@
+grep --exclude-dir="bazel-*" -HnR --include "*.proto" "$1" 
+grep --exclude-dir="bazel-*" -HnR --include "*.h" "$1" 
+grep --exclude-dir="bazel-*" -HnR --include "*.cc" "$1" 
+grep --exclude-dir="bazel-*" -HnR --include "*.hpp" "$1" 
+grep --exclude-dir="bazel-*" -HnR --include "*.cpp" "$1" 
+grep --exclude-dir="bazel-*" -HnR --include "BUILD" "$1" 
+grep --exclude-dir="bazel-*" -HnR --include "*.pbtxt" "$1" 

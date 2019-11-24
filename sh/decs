@@ -1,0 +1,7 @@
+FILTER="grep -v bazel-"
+FILTER2="grep -v build"
+grep -R --exclude-dir="bazel-*" --include "*.proto" "message $1" | ${FILTER} | ${FILTER2}
+grep -R --exclude-dir="bazel-*" --include "*.h" "class $1" | ${FILTER} | ${FILTER2}
+grep -R --exclude-dir="bazel-*" --include "*.h" " $1(" | ${FILTER} | ${FILTER2}
+
+

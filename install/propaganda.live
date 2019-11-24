@@ -1,0 +1,6 @@
+BASE_PATH=/var/www
+WEB_SITE=propaganda.live
+NGINX_PATH=${BASE_PATH}/${WEB_SITE}
+ABSOLUTE_GIT_PATH=${PWD}/nginx/${WEB_SITE}/html
+sudo mkdir ${NGINX_PATH}
+sudo ln -s ${ABSOLUTE_GIT_PATH} ${NGINX_PATH}/html 

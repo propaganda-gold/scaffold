@@ -1,0 +1,1 @@
+bazel build forklift:inc1 && bazel-bin/forklift/inc1 --target_file=$1 --class_name=$2 --dry_run=false

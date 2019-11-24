@@ -1,0 +1,6 @@
+PRINT_LINE="Print"
+PRINT_LINE="${PRINT_LINE}_"
+git grep -l -z "${PRINT_LINE}" | xargs -0 sed -i "/${PRINT_LINE}/d"
+
+DEFINE_FILE="util/logging.h"
+git checkout -- ${DEFINE_FILE}

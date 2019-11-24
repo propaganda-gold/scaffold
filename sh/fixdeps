@@ -1,0 +1,20 @@
+CC_TARGET=$1
+REBUILD=0
+
+BAZEL_PATH=bazel-bin/forklift/fixdeps
+CACHE_PATH=~/bin-cache/fixdeps
+
+if [ ${REBUILD} -eq 1 ]; then
+	bazel build forklift:fixdeps
+	if [ $? -eq 0 ]; then
+		echo OK
+		cp -f ${BAZEL_PATH} ${CACHE_PATH}
+	else
+		echo FAIL
+		exit 1;
+	fi
+fi
+
+SH_FILE=/tmp/fixdeps.sh
+${CACHE_PATH} --target=${CC_TARGET} | tee $SH_FILE
+bash $SH_FILE
