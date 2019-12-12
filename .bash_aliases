@@ -1,5 +1,5 @@
 export PROMPT_COMMAND='fc -ln -1 | xargs echo -e "$(date)\t$PWD\t" >> ~/cmds'
-export PATH=$PATH:~/go/bin:~/mono1/sh:~/mono1/cpp/forklift
+export PATH=$PATH:~/scaffold/sh
 source /home/greg/.bazel/bin/bazel-complete.bash
 
 alias d="git diff"
