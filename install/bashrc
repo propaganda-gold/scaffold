@@ -1,2 +1,2 @@
-ABSOLUTE_GIT_PATH=${PWD}/env/.bash_aliases
+ABSOLUTE_GIT_PATH=${PWD}/.bash_aliases
 ln -s -f ${ABSOLUTE_GIT_PATH} ~/.bash_aliases
