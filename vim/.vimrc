@@ -64,3 +64,5 @@ nnoremap ;s :%s/\<<C-r><C-w>\>/
 
 autocmd BufNewFile,BufRead *.vue set syntax=html
 
+set noswapfile
+
