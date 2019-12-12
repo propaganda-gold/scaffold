@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/greg/hiredis'
 let g:netrw_dirhist_2='/home/greg/factory/3359911-0e869d0fb5bdaf9b80fb6da35cb809dd2aea5418'
 let g:netrw_dirhist_3='/home/greg/vectorbook/demo/factory'
 let g:netrw_dirhist_4='/home/greg/vectorbook/api/ops'
 let g:netrw_dirhist_5='/home/greg/client/splash-vectorbook/src'
 let g:netrw_dirhist_6='/home/greg/client/splash-vectorbook/src/components'
+let g:netrw_dirhist_7='/home/greg/todominator/src/components'
