@@ -1,5 +1,5 @@
 export PROMPT_COMMAND='fc -ln -1 | xargs echo -e "$(date)\t$PWD\t" >> ~/cmds'
-export PATH=$PATH:~/scaffold/sh
+export PATH=$PATH:~/scaffold/sh:~/forklift/bin
 
 alias redis="redis-cli"
 
