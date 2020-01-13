@@ -1,7 +1,5 @@
 sudo apt update
 
-sudo apt -y install npm
-
 sudo apt -y install clang-format
 sudo snap install ripgrep --classic
 
