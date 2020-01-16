@@ -5,3 +5,4 @@ alias redis="redis-cli"
 
 echo Welcome, ${USER}@. I have sourced your bashrc.
 
+source /usr/local/lib/bazel/bin/bazel-complete.bash
