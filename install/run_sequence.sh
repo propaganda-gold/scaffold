@@ -8,6 +8,3 @@ go get github.com/bazelbuild/buildtools/buildozer
 
 ./install/bashrc
 ./install/vim
-
-git config --global user.name Greg
-git config --global user.email greg@propaganda.gold
