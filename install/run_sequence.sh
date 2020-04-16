@@ -8,3 +8,6 @@ go get github.com/bazelbuild/buildtools/buildozer
 
 ./install/bashrc
 ./install/vim
+
+./install/git.sh
+./install/keys.sh
