@@ -1,16 +1,6 @@
-" nnoremap <C-l> :py3 ZoomIn()<CR>
-" nnoremap <C-j> :py3 SaveAll()<CR>
-" nnoremap <C-i> :py3 SummarizeWebPage()<CR>
-" nnoremap <C-h> :py3 InsertRandomHash()<CR>
-" nnoremap <C-k> :py3 WriteBack()<CR>
-" nnoremap <C-o> :py3 WriteBack()<CR>zo
-" nnoremap <C-e> :py3 print(current_file_name())<CR>
-
 set tabstop=2
 set shiftwidth=2
-
 set autoindent
-set foldmethod=indent
 set laststatus=2
 
 nnoremap ;k :execute "normal! " . winheight(0) . "k"<CR>
@@ -29,7 +19,6 @@ vnoremap ;r :s/^/\/\//<CR>
 vnoremap ,r :s/^..//<CR>
 
 set number
-
 set colorcolumn=80
 
 function! s:insert_gates()
@@ -46,16 +35,29 @@ nmap ;c :py3 SwitchFileType('cc')<CR>
 nmap ;t :py3 SwitchFileType('test')<CR>
 nmap ;b :py3 SwitchFileType('b')<CR>
 
-" nmap ,h :find %:t:r.h<CR>
-" nmap ,c :find %:t:r.cc<CR>
-" nmap ,b :find %:p:h:t/BUILD<CR>
+nnoremap <C-f> :FZF<CR>
+nnoremap <C-j> :FZFMru<CR>
+nnoremap <C-k> :NERDTreeToggle<CR>
+
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'preservim/nerdtree'
+Plug 'pbogut/fzf-mru.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'morhetz/gruvbox'
+call plug#end()
+
+
+colorscheme gruvbox
+
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 set hidden
 
 " nmap <C-j> :CtrlPBuffer<CR>
-nmap <C-j> :CtrlPMRU<CR>
+" nmap <C-j> :CtrlPMRU<CR>
 
 nmap ;f :! clang-format -i %<CR>
 nmap ;d :! fixdeps %<CR>
