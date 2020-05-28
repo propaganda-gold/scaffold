@@ -49,9 +49,6 @@ Plug 'morhetz/gruvbox'
 call plug#end()
 
 
-colorscheme gruvbox
-
-
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 set hidden
