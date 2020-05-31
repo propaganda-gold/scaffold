@@ -50,6 +50,7 @@ call plug#end()
 
 
 colorscheme gruvbox
+set bg=dark
 
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -59,7 +60,8 @@ set hidden
 " nmap <C-j> :CtrlPBuffer<CR>
 " nmap <C-j> :CtrlPMRU<CR>
 
-nmap ;f :! clang-format -i %<CR>
+" nmap ;f :! clang-format -i %<CR>
+nmap ;f :! js-beautify -r %<CR>
 nmap ;d :! fixdeps %<CR>
 
 nnoremap ;s :%s/\<<C-r><C-w>\>/
