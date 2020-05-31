@@ -52,9 +52,6 @@ call plug#end()
 colorscheme gruvbox
 set bg=dark
 
-
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
 set hidden
 
 " nmap <C-j> :CtrlPBuffer<CR>
