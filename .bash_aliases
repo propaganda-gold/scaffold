@@ -7,3 +7,11 @@ source /usr/local/lib/bazel/bin/bazel-complete.bash
 alias i=vim
 
 export FZF_DEFAULT_COMMAND="ag -g ''"
+
+
+BASH_SECRETS_FILE=~/.bash_secrets
+if [ ! -f "${BASH_SECRETS_FILE}" ]; then
+    touch ${BASH_SECRETS_FILE}
+fi
+
+source ~/.bash_secrets
