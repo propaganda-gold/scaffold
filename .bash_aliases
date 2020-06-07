@@ -5,6 +5,7 @@ echo Welcome, ${USER}@. I have sourced your bashrc.
 source /usr/local/lib/bazel/bin/bazel-complete.bash
 
 alias i=vim
+alias r="redis-cli"
 
 export FZF_DEFAULT_COMMAND="ag -g ''"
 
@@ -15,3 +16,4 @@ if [ ! -f "${BASH_SECRETS_FILE}" ]; then
 fi
 
 source ~/.bash_secrets
+

@@ -1,1 +1,1 @@
-sudo netstat -ltnp
+sudo netstat -ltnp | grep $1
