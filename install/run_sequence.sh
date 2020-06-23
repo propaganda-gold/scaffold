@@ -8,4 +8,4 @@ go get github.com/bazelbuild/buildtools/buildozer
 
 ./install/bashrc
 ./install/vim
-
+./install/fzf

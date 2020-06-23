@@ -1,0 +1,5 @@
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+cd ~/.fzf
+./install
+
+sudo apt-get install silversearcher-ag
