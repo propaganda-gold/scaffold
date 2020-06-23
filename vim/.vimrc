@@ -39,25 +39,11 @@ nnoremap <C-f> :FZF<CR>
 nnoremap <C-j> :FZFMru<CR>
 nnoremap <C-k> :NERDTreeToggle<CR>
 
-call plug#begin('~/.vim/plugged')
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'preservim/nerdtree'
-Plug 'pbogut/fzf-mru.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline'
-Plug 'morhetz/gruvbox'
-call plug#end()
-
-
 colorscheme gruvbox
 set bg=dark
 
 set hidden
 
-" nmap <C-j> :CtrlPBuffer<CR>
-" nmap <C-j> :CtrlPMRU<CR>
-
-" nmap ;f :! clang-format -i %<CR>
 nmap ;f :! js-beautify -r %<CR>
 nmap ;d :! fixdeps %<CR>
 
