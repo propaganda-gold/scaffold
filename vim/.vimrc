@@ -8,17 +8,15 @@ nnoremap ;j :execute "normal! " . winheight(0) . "j"<CR>
 
 nnoremap ;w :w<CR>
 nnoremap ;a :echo "no need to do this"<CR>
-nnoremap ;q :q<CR>
+nnoremap ;q :qa<CR>
 
 nnoremap ;p :pwd<CR>
 nnoremap ;x :Explore<CR>
 
 nnoremap ;e :e<CR>
-
 vnoremap ;r :s/^/\/\//<CR>
 vnoremap ,r :s/^..//<CR>
 
-set number
 set colorcolumn=80
 
 function! s:insert_gates()
@@ -50,6 +48,8 @@ nmap ;d :! fixdeps %<CR>
 nnoremap ;s :%s/\<<C-r><C-w>\>/
 
 autocmd BufNewFile,BufRead *.vue set syntax=html
+
+autocmd BufNewFile,BufRead * execute "Goyo 80"
 
 set noswapfile
 

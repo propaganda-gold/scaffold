@@ -126,12 +126,13 @@ function! s:hide_statusline()
 endfunction
 
 function! s:hide_linenr()
-  if !get(g:, 'goyo_linenr', 0)
-    setlocal nonu
-    if exists('&rnu')
-      setlocal nornu
-    endif
-  endif
+	set number
+  " if !get(g:, 'goyo_linenr', 1)
+  "   setlocal nonu
+  "  if exists('&rnu')
+  "     setlocal nornu
+  "  endif
+  "endif
   if exists('&colorcolumn')
     setlocal colorcolumn=
   endif
