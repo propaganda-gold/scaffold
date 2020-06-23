@@ -12,3 +12,4 @@ git clone https://github.com/junegunn/goyo.vim ~/.vim/pack/default/start/goyo
 
 ./install/bashrc
 ./install/vim
+./install/fzf
