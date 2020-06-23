@@ -53,3 +53,5 @@ autocmd BufNewFile,BufRead * execute "Goyo 80"
 
 set noswapfile
 
+" If installed using git
+set rtp+=~/.fzf
