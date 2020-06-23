@@ -1,3 +1,2 @@
 ABSOLUTE_GIT_PATH=${PWD}/vim
 ln -s -f ${ABSOLUTE_GIT_PATH}/.vimrc ~
-ln -s -f ${ABSOLUTE_GIT_PATH}/.vim ~
