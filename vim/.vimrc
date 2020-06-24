@@ -17,6 +17,8 @@ nnoremap ;e :e<CR>
 vnoremap ;r :s/^/\/\//<CR>
 vnoremap ,r :s/^..//<CR>
 
+nnoremap ;v :terminal<CR>
+
 set colorcolumn=80
 
 function! s:insert_gates()
