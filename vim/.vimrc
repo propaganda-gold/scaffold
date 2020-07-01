@@ -45,6 +45,7 @@ set bg=dark
 set hidden
 
 nmap ;f :! js-beautify -r %<CR>
+nmap ;g :! clang-format -i %<CR>
 nmap ;d :! fixdeps %<CR>
 
 nnoremap ;s :%s/\<<C-r><C-w>\>/

@@ -7,6 +7,10 @@ source /usr/local/lib/bazel/bin/bazel-complete.bash
 alias i=vim
 alias r="redis-cli"
 
+alias status="sudo supervisorctl status"
+alias stop="sudo supervisorctl stop"
+alias start="sudo supervisorctl start"
+
 export FZF_DEFAULT_COMMAND="ag -g ''"
 
 

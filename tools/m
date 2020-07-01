@@ -1,0 +1,1 @@
+mongo mongodb+srv://cluster0-emqe6.mongodb.net/test --username dbUser -p ${DEEPREV_MONGOOSE_PASSWORD}
