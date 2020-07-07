@@ -1,3 +1,6 @@
+./install/keys.sh
+./install/git.sh
+
 sudo apt update
 
 sudo apt -y install clang-format
