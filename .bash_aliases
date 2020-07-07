@@ -21,3 +21,4 @@ fi
 
 source ~/.bash_secrets
 
+source /usr/local/lib/bazel/bin/bazel-complete.bash
