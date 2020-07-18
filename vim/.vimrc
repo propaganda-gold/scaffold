@@ -52,7 +52,7 @@ nnoremap ;s :%s/\<<C-r><C-w>\>/
 
 autocmd BufNewFile,BufRead *.vue set syntax=html
 
-autocmd BufNewFile,BufRead * execute "Goyo 80"
+" autocmd BufNewFile,BufRead * execute "Goyo 80"
 
 set noswapfile
 
