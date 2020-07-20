@@ -58,3 +58,5 @@ set noswapfile
 
 " If installed using git
 set rtp+=~/.fzf
+
+set number
