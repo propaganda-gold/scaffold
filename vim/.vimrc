@@ -8,7 +8,9 @@ nnoremap ;j :execute "normal! " . winheight(0) . "j"<CR>
 
 nnoremap ;w :w<CR>
 nnoremap ;a :echo "no need to do this"<CR>
-nnoremap ;q :qa<CR>
+nnoremap ;q :q<CR>
+
+nnoremap F :set foldmethod=indent<CR>
 
 nnoremap ;p :pwd<CR>
 nnoremap ;x :Explore<CR>
@@ -18,8 +20,6 @@ vnoremap ;r :s/^/\/\//<CR>
 vnoremap ,r :s/^..//<CR>
 
 nnoremap ;v :terminal<CR>
-
-set colorcolumn=80
 
 function! s:insert_gates()
   let gatename = substitute(toupper(expand(("%:r"))), "\/", "_", "g")
