@@ -44,6 +44,7 @@ set bg=dark
 
 set hidden
 
+nmap F :set foldmethod=indent<CR>
 nmap ;f :! js-beautify -r %<CR>
 nmap ;g :! clang-format -i %<CR>
 nmap ;d :! fixdeps %<CR>
