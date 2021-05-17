@@ -16,6 +16,8 @@ set laststatus=2
 nnoremap ;k :execute "normal! " . winheight(0) . "k"<CR>
 nnoremap ;j :execute "normal! " . winheight(0) . "j"<CR>
 
+nnoremap ;l :ls<CR>
+
 nnoremap ;w :w<CR>
 nnoremap ;a :echo "no need to do this"<CR>
 nnoremap ;q :q<CR>
@@ -23,7 +25,8 @@ nnoremap ;q :q<CR>
 nnoremap ;p :pwd<CR>
 nnoremap ;x :Explore<CR>
 
-nnoremap ;e :e<CR>
+nnoremap ;f :FZF<CR>
+nnoremap ;r :FZFMru<CR>
 
 vnoremap ;r :s/^/\/\//<CR>
 vnoremap ,r :s/^..//<CR>
@@ -55,9 +58,9 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set hidden
 
 " nmap <C-j> :CtrlPBuffer<CR>
-nmap <C-j> :CtrlPMRU<CR>
+" nmap <C-j> :CtrlPMRU<CR>
 
-nmap ;f :! clang-format -i %<CR>
+nmap ;v :! clang-format -i %<CR>
 nmap ;d :! fixdeps %<CR>
 
 nnoremap ;s :%s/\<<C-r><C-w>\>/
@@ -65,4 +68,12 @@ nnoremap ;s :%s/\<<C-r><C-w>\>/
 autocmd BufNewFile,BufRead *.vue set syntax=html
 
 set noswapfile
+
+syntax on
+
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'pbogut/fzf-mru.vim'
+call plug#end()
+
 
